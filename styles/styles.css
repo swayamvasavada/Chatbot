@@ -1,3 +1,49 @@
+#main {
+    height: 800px;
+    background: linear-gradient(15deg, rgb(227,255,253), rgb(10,134,126));
+    background-position: center;
+    background-size: cover;
+}
+
+
+#main-content {
+    width: 900px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+
+/* #main-content h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    font-weight: 300;
+} */
+
+#main-content p {
+    color: white;
+    margin-bottom: 32px;
+}
+
+#main-content a {
+    background-color: yellow;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+
+#main-content a:hover,
+#main-content a:active {
+    background-color: orange;
+}
+
 body {
     background-color: black;
 }
@@ -5,15 +51,17 @@ body {
 #chatbot {
     background-color: white;
     display: none;
-    position: fixed;
-    right: 1rem;
+    position: absolute;
+    right: 2rem;
     bottom: 0;
-    top: 40%;
-    height: 20rem;
+    top: 0%;
+    height: 40rem;
+    width: 20rem;
+    border-radius: 16px;
 }
 
 #chatbot-img {
-    position: absolute;
+    position: fixed;
     right: 1rem;
     bottom: 1rem;
     width: 6rem;
@@ -48,7 +96,7 @@ body {
 
 .bot-message {
     padding: 0.5rem 50px 0 2px;
-
+    display: block;
     margin: 1rem;
     margin-left: 0.2rem;
     list-style: none;
@@ -64,7 +112,10 @@ body {
 
 .user-selection {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+    /* padding: 4px; */
 }
 
 .user-selection li {
@@ -75,8 +126,42 @@ body {
 }
 
 span {
-    padding: 5px;
+    padding: 8px;
     border: 5px solid blue;
     border-radius: 8px;
     cursor: pointer;
+}
+
+#selected-option {
+    display: inline;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 8px;
+    display: none;
+    color: white;
+}
+
+#option_container {
+    text-align: right;
+    padding: 5px;
+}
+
+#botmessage-3 {
+    display: none;
+}
+
+#option-3 {
+    display: none;
+}
+
+#option-4 {
+    display: none;
+}
+
+#option-5 {
+    display: none;
+}
+
+#option-6 {
+    display: none;
 }
